@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <main className="relative isolate min-h-svh overflow-hidden bg-slate-950 text-white">
       <MoltenMetal
-        className="pointer-events-none fixed inset-0 -z-10"
+        className="pointer-events-none absolute inset-0 z-0"
         color1="#18073d"
         color2="#7c2d12"
         color3="#fbbf24"
@@ -14,7 +14,7 @@ export default function Page() {
         mouseInteraction={false}
         scale={3.5}
       />
-      <div className="flex min-h-svh p-6">
+      <div className="relative z-10 flex min-h-svh p-6">
         <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         <div>
           <h1 className="font-medium">Project ready!</h1>
